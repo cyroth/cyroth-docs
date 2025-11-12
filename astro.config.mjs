@@ -16,7 +16,8 @@ integrations:
       title: 'cyroth.dev',
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/cyroth/'},
-        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/VMMWpdsWZE'}
+        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/VMMWpdsWZE'},
+				{ icon: 'open-book',label: 'Blog', href: 'https://cyroth.com' }
       ],
       sidebar: [
           { slug: 'home'},
