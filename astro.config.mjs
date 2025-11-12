@@ -1,14 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import mdx from '@astrojs/mdx';
 import cloudflare from '@astrojs/cloudflare';
-
 
 export default defineConfig({
   site: 'https://cyroth.dev',
 
-  integrations: 
+integrations: 
     [starlight({
       //tableOfContents: false,
       favicon: '/images/radiation.png',
@@ -35,11 +33,7 @@ export default defineConfig({
           
           //{ label: 'NASA', link: 'https://www.nasa.gov/' },
       ],
-    plugins:
-      [],
-  }),
-mdx()
-],
-
-  adapter: cloudflare()
+  	}),
+    ],
+adapter: cloudflare()
 });
