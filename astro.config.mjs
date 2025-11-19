@@ -23,13 +23,13 @@ integrations:
           { slug: 'home'},
           { slug: 'links' },
           {
-              label: 'Quick Guides',
+              label: 'Guides',
               autogenerate: { directory: 'guides' },
           },
           {
-              label: 'Games',
+              label: 'Reference',
               collapsed: true,
-              autogenerate: { directory: 'games' },
+              autogenerate: { directory: 'reference' },
           },
           
           //{ label: 'NASA', link: 'https://www.nasa.gov/' },
