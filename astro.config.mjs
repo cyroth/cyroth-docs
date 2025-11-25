@@ -20,7 +20,7 @@ integrations:
 				{ icon: 'open-book',label: 'Blog', href: 'https://cyroth.com/blog' }
       ],
       sidebar: [
-          { slug: 'home'},
+          // { slug: 'home'},
           { slug: 'links' },
           {
               label: 'Guides',
