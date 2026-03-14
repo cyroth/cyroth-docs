@@ -14,9 +14,9 @@ Example for mounting cloud drives at boot using rclone
 Description=Mount for /cloud/google
 [Mount]
 Type=rclone
-What=google-drive:
+What=google:
 Where=/cloud/google
-Options=rw,netdev,allow_other,args2env,vfs-cache-mode=writes,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone
+Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=writes,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone,vfs-cache-mode=full
 [Install]
 WantedBy=multi-user.target
 ```
@@ -32,7 +32,7 @@ Description=Mount for /cloud/onedrive
 Type=rclone
 What=onedrive:
 Where=/cloud/onedrive
-Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=writes,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone
+Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=writes,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone,vfs-cache-mode=full
 [Install]
 WantedBy=multi-user.target
 ```
