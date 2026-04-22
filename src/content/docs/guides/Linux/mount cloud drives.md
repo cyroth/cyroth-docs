@@ -16,7 +16,7 @@ Description=Mount for /cloud/google
 Type=rclone
 What=google:
 Where=/cloud/google
-Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=writes,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone,vfs-cache-mode=full
+Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=full,vfs-cache-max-size=10G,vfs-cache-max-age=24h,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone
 [Install]
 WantedBy=multi-user.target
 ```
@@ -32,7 +32,7 @@ Description=Mount for /cloud/onedrive
 Type=rclone
 What=onedrive:
 Where=/cloud/onedrive
-Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=writes,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone,vfs-cache-mode=full
+Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=full,vfs-cache-max-size=10G,vfs-cache-max-age=24h,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone
 [Install]
 WantedBy=multi-user.target
 ```
@@ -46,3 +46,25 @@ Mount with
 May need to symlink rclone ro /sbin/mount.rclone
 
 `ln -s /usr/bin/rclone /sbin/mount.rclone`
+
+### To make automount
+
+Create `/etc/systemd/system/cloud-google.automount`
+
+```
+[Unit]
+Description=Automount for /cloud/google
+
+[Automount]
+Where=/cloud/google
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+sudo systemctl stop cloud-google.mount
+sudo systemctl disable cloud-google.mount
+sudo systemctl daemon-reload
+sudo systemctl enable --now cloud-google.automount
+```
