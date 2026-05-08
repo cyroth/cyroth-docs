@@ -9,7 +9,7 @@ What it boils down to is the prerquisite packages and the general install. I'll 
 
 Install Chrome remote desktop
 
-```
+```bash
 curl https://dl.google.com/linux/linux_signing_key.pub \
     | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/chrome-remote-desktop.gpg
 echo "deb [arch=amd64] https://dl.google.com/linux/chrome-remote-desktop/deb stable main" \
@@ -20,7 +20,8 @@ sudo DEBIAN_FRONTEND=noninteractive \
 ```
 
 Install your choice of desktop environment and prereqisite packages (I'm using Cinnamon)
-```
+
+```bash
 sudo DEBIAN_FRONTEND=noninteractive \
     apt install --assume-yes cinnamon-core desktop-base dbus-x11
 ```

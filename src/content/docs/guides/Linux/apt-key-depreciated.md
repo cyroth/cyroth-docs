@@ -31,8 +31,8 @@ deb-src [signed-by=/usr/share/keyrings/rundeck.gpg] https://packages.rundeck.com
 
 Then run apt update as normal
 
-```
-apt-get update
-apt-get install rundeck
-systemctl enable rundeckd
+```bash
+sudo apt update
+sudo apt install rundeck
+sudo systemctl enable rundeckd
 ```

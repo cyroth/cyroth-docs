@@ -1,5 +1,5 @@
 ---
-title: "Mounting systemd mount drives with rclone"
+title: "System level rclone mounts"
 ---
 
 Example for mounting cloud drives at boot using rclone
@@ -16,7 +16,7 @@ Description=Mount for /cloud/google
 Type=rclone
 What=google:
 Where=/cloud/google
-Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=full,vfs-cache-max-size=10G,vfs-cache-max-age=24h,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone
+Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=full,vfs-cache-max-size=10G,vfs-cache-max-age=24h,dir-cache-time=1000h,attr-timeout=1000h,vfs-read-ahead=256M,poll-interval=15s,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone
 [Install]
 WantedBy=multi-user.target
 ```
@@ -32,7 +32,7 @@ Description=Mount for /cloud/onedrive
 Type=rclone
 What=onedrive:
 Where=/cloud/onedrive
-Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=full,vfs-cache-max-size=10G,vfs-cache-max-age=24h,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone
+Options=rw,_netdev,allow_other,args2env,vfs-cache-mode=full,vfs-cache-max-size=10G,vfs-cache-max-age=24h,dir-cache-time=1000h,attr-timeout=1000h,vfs-read-ahead=256M,poll-interval=15s,config=/home/cyroth/.config/rclone/rclone.conf,cache-dir=/var/rclone
 [Install]
 WantedBy=multi-user.target
 ```

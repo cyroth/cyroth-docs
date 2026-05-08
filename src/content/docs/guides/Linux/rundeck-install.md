@@ -25,7 +25,7 @@ EOF
 
 Then install it
 
-```
+```bash
 sudo apt update
 sudo apt install rundeck
 ```
