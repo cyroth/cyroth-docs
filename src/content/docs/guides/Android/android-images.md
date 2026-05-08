@@ -1,5 +1,7 @@
 ---
 title: Undo always display images
+description: "How do I undo 'always display images from this sender' on Android gmail?"
+tableOfContents: false
 ---
 
 How do I undo "always display images from this sender" on Android gmail? - Android Enthusiasts Stack Exchange

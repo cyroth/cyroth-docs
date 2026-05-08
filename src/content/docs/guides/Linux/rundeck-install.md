@@ -1,5 +1,7 @@
 ---
 title: Installing Pagerduty Rundeck OSS
+description: "Installing Pagerduty Rundeck OSS"
+tableOfContents: false
 ---
 
 The official [guide](https://docs.rundeck.com/docs/administration/install/linux-deb.html#installing-rundeck) for installing Rundeck OSS is outdated and won't work without a lot of messing around. I've modernized the install process

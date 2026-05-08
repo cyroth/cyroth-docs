@@ -1,5 +1,6 @@
 ---
 title: "System level rclone mounts"
+description: "System level rclone mounts"
 ---
 
 Example for mounting cloud drives at boot using rclone

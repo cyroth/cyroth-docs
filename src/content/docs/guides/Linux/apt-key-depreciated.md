@@ -1,5 +1,7 @@
 ---
 title: "apt-key depreciated"
+description: "apt-key has been deprecated with Debian 13"
+tableOfContents: false
 ---
 
 

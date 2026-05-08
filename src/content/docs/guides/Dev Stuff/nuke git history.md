@@ -1,5 +1,6 @@
 ---
 title: "Nuke git history"
+description: "Nuke git history"
 ---
 If you add a .env or some other password to git by mistake, you'll want to remove it.
 
