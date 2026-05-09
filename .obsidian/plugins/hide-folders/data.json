@@ -1,0 +1,16 @@
+{
+  "areFoldersHidden": true,
+  "matchCaseInsensitive": true,
+  "addHiddenFoldersToObsidianIgnoreList": false,
+  "hideBottomStatusBarIndicatorText": false,
+  "enableCompatQuickExplorer": false,
+  "attachmentFolderNames": [
+    "attachments",
+    "node_modules",
+    "public",
+    "assets",
+    "components",
+    "pages",
+    "templates"
+  ]
+}

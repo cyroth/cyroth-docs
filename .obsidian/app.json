@@ -1,0 +1,10 @@
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "src/content/docs/guides",
+  "openBehavior": "",
+  "userIgnoreFilters": [
+    "public/",
+    "node_modules/"
+  ],
+  "useMarkdownLinks": true
+}
