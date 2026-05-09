@@ -1,6 +1,6 @@
 ---
-title: "Clean docker ps"
-description: "Clean docker ps"
+title: Clean docker ps
+description: Clean docker ps
 tableOfContents: false
 ---
 To get a clean view of running docker containers (without ports and such), you can use the following command:
