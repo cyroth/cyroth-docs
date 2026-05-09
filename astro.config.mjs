@@ -6,35 +6,35 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   site: 'https://cyroth.dev',
 
-integrations: 
+  integrations:
     [starlight({
       //tableOfContents: false,
       favicon: '/images/radiation.png',
       logo: {
-          src: './src/assets/radiation.png',
+        src: './src/assets/radiation.png',
       },
       title: 'cyroth.dev',
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/cyroth/'},
-        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/VMMWpdsWZE'},
-				{ icon: 'open-book',label: 'Blog', href: 'https://cyroth.com/blog' }
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/cyroth/' },
+        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/VMMWpdsWZE' },
+        { icon: 'open-book', label: 'Blog', href: 'https://cyroth.com/blog' }
       ],
       sidebar: [
-          // { slug: 'home'},
-          { slug: 'links' },
-          {
-              label: 'Guides',
-              autogenerate: { directory: 'guides' },
-          },
-          {
-              label: 'Reference',
-              collapsed: true,
-              autogenerate: { directory: 'reference' },
-          },
-          
-          //{ label: 'NASA', link: 'https://www.nasa.gov/' },
+        // { slug: 'home'},
+        { slug: 'links' },
+        {
+          label: 'Guides',
+          autogenerate: { directory: 'guides' },
+        },
+        {
+          label: 'Reference',
+          //collapsed: true,
+          autogenerate: { directory: 'reference' },
+        },
+
+        //{ label: 'NASA', link: 'https://www.nasa.gov/' },
       ],
-  	}),
+    }),
     ],
-adapter: cloudflare()
+  adapter: cloudflare()
 });
