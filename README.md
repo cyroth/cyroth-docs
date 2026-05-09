@@ -1,12 +1,23 @@
-# Starlight Starter Kit: Basics
-
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
-
+# Properties
+## tableOfContents
+Boolean. Whether or not the sidebar is shown
+## lastUpdated
+Overrides global lastUpdated option with the specified date (YAML format)
+## prev | next
+- Overrides pagination option
+- True/False disables 
+Can override linking like so:
 ```
-npm create astro@latest -- --template starlight
+prev:
+  link: /unrelated-page/
+  label: Check out this other page
 ```
+## draft
+Boolean. Will not show in prod build if true 
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Reference
+[Frontmatter reference](https://starlight.astro.build/reference/frontmatter)
+# Starlight Basics
 
 ## 🚀 Project Structure
 
@@ -44,6 +55,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 👀 Links
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).

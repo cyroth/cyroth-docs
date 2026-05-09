@@ -2,7 +2,6 @@
 title: "Ansible Tips"
 description: "Ansible tips and tricks"
 ---
-
 Just a collection of things I've found useful for ansible/semaphore-ui
 
 ## Nested inventory

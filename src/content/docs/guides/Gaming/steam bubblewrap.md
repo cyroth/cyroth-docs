@@ -1,9 +1,8 @@
 ---
-title: "Steam bubblewrap error"
-description: "Steam now requires user namespaces to be enabled bubblewrap fix"
+title: Steam bubblewrap error
+description: Steam now requires user namespaces to be enabled bubblewrap fix
 tableOfContents: false
 ---
-
 If you see this error when starting Steam after an update:
 
 > Steam now requires user namespaces to be enabled.
