@@ -24,12 +24,14 @@ export default defineConfig({
         { slug: 'links' },
         {
           label: 'Guides',
-          autogenerate: { directory: 'guides' },
+          items: [{ autogenerate: { directory: 'guides' } }],
+          //autogenerate: { directory: 'guides' },
         },
         {
           label: 'Reference',
           //collapsed: true,
-          autogenerate: { directory: 'reference' },
+          items: [{ autogenerate: { directory: 'reference' } }],
+          //autogenerate: { directory: 'reference' },
         },
 
         //{ label: 'NASA', link: 'https://www.nasa.gov/' },

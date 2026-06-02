@@ -1,4 +1,5 @@
 ---
-title: 
-description: 
+title: {{title}}
+description: {{title}}
+draft: true
 ---

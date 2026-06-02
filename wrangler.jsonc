@@ -1,18 +1,19 @@
 {
-	"main": "dist/_worker.js/index.js",
-	"name": "cyroth-docs",
+  //"main": "dist/_worker.js/index.js",
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "name": "cyroth-docs",
   "compatibility_date": "2025-11-12",
   "compatibility_flags": [
     "nodejs_compat",
     "global_fetch_strictly_public"
   ],
   "preview_urls": true,
-	"assets": {
-		"binding": "ASSETS",
-		"directory": "./dist",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist",
     //"not_found_handling": "404-page" // If you have a custom `src/pages/404.astro` page
-	},
-	"observability": {
+  },
+  "observability": {
     "enabled": true
   }
 }
