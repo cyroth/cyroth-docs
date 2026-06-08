@@ -38,5 +38,8 @@ export default defineConfig({
       ],
     }),
     ],
-  adapter: cloudflare()
+  adapter: cloudflare({
+    // Add this line to bypass workerd during build prerendering
+    prerenderEnvironment: 'node'
+  })
 });
