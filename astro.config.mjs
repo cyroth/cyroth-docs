@@ -40,6 +40,6 @@ export default defineConfig({
     ],
   adapter: cloudflare({
     // Add this line to bypass workerd during build prerendering
-    prerenderEnvironment: 'node'
+    //prerenderEnvironment: 'node'
   })
 });
